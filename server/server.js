@@ -19,7 +19,6 @@ app.use(require('./routes/index'));
 
 mongoose.connect(process.env.URLDB, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true }, (err, resp) => {
     if (err) throw err;
-
     console.log('Base de datos ONLINE');
 });
 
